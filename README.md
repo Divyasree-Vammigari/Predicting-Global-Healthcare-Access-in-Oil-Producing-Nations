@@ -1,4 +1,4 @@
-This study aims to predict the Healthcare Access Index worldwide and understand its 
+This project aims to predict the Healthcare Access Index worldwide and understand its 
 relationship with various socio-economic and health indicators. Data was collected from 
 reputable sources, including Our World in Data, the World Bank, and Transparency 
 International, covering a range of indicators for OPEC countries and the USA. After merging 
