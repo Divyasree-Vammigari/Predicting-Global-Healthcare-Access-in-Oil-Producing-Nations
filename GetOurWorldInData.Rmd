@@ -1,0 +1,55 @@
+---
+title: "Our World In Data Scraping"
+author: "Ariana Mendible"
+date: "2022-10-14"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+Here is where I downloaded my original data from: 
+```{r}
+oil_production = 'https://ourworldindata.org/grapher/oil-production-by-country'
+birth_rate = 'https://ourworldindata.org/grapher/crude-birth-rate'
+corruption = 'https://ourworldindata.org/grapher/ti-corruption-perception-index'
+GDPPerCapita = 'https://ourworldindata.org/grapher/gdp-per-capita-in-us-dollar-world-bank'
+genderIneq = 'https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report'
+fairElections = 'https://ourworldindata.org/grapher/free-fair-elections-bti'
+freeExpression = 'https://ourworldindata.org/grapher/freedom-of-expression-bti'
+investIn = 'https://ourworldindata.org/grapher/foreign-direct-investment-net-inflows-as-share-of-gdp'
+investOut = 'https://ourworldindata.org/grapher/foreign-direct-investment-net-outflows-of-gdp'
+healthcare = 'https://ourworldindata.org/grapher/healthcare-access-and-quality-index'
+povertyShare = 'https://ourworldindata.org/grapher/projected-share-extreme-poverty'
+```
+
+```{r}
+# All my .csv files are in the same folder as my current Rmd file
+files = list.files(path = ".", pattern = '.csv')
+
+# OPEC country codes and USA
+# several other countries have been in OPEC in between and have since left, some of these are recent additions
+# read the history here: https://www.opec.org/opec_web/en/about_us/25.htm
+country_code_list = c('DZA','AGO','COG','GNQ','GAB','IRN','IRQ','KWT','LBY','NGA','SAU','ARE','VEN','USA')
+
+# function to merge the frames
+addFrame <- function(fpath, country_code_list, megaDF = NULL){
+  df <- read_csv(fpath) %>% filter(Code %in%  country_code_list)
+  if(is.null(megaDF)){
+    megaDF <- df
+  } else {
+    megaDF <- full_join(df, megaDF, by=c('Year','Code','Entity'))
+  }
+}
+
+# making one big data frame with all variables
+bigdf = addFrame(files[1], country_code_list)
+for (i in 2:length(files)){
+  bigdf = addFrame(files[i], country_code_list, bigdf)
+}
+
+# saving
+write_csv(bigdf, file='OPEC_data.csv')
+```
+

@@ -1,0 +1,85 @@
+year,country,corruption_index,fair_elections
+2012,Algeria,3.4,NA
+2013,Algeria,3.6,6
+2014,Algeria,3.6,NA
+2015,Algeria,3.6,5
+2016,Algeria,3.4,NA
+2017,Algeria,3.3,5
+2018,Algeria,3.5,NA
+2012,Angola,2.2,NA
+2013,Angola,2.3,4
+2014,Angola,1.9,NA
+2015,Angola,1.5,3
+2016,Angola,1.8,NA
+2017,Angola,1.9,3
+2018,Angola,1.9,NA
+2012,Congo,2.6,NA
+2013,Congo,2.2,3
+2014,Congo,2.3,NA
+2015,Congo,2.3,3
+2016,Congo,2,NA
+2017,Congo,2.1,2
+2018,Congo,1.9,NA
+2012,Gabon,3.5,NA
+2013,Gabon,3.4,NA
+2014,Gabon,3.7,NA
+2015,Gabon,3.4,NA
+2016,Gabon,3.5,NA
+2017,Gabon,3.2,NA
+2018,Gabon,3.1,NA
+2012,Iran,2.8,NA
+2013,Iran,2.5,3
+2014,Iran,2.7,NA
+2015,Iran,2.7,4
+2016,Iran,2.9,NA
+2017,Iran,3,4
+2018,Iran,2.8,NA
+2012,Iraq,1.8,NA
+2013,Iraq,1.6,7
+2014,Iraq,1.6,NA
+2015,Iraq,1.6,7
+2016,Iraq,1.7,NA
+2017,Iraq,1.8,6
+2018,Iraq,1.8,NA
+2012,Kuwait,4.4,NA
+2013,Kuwait,4.3,4
+2014,Kuwait,4.4,NA
+2015,Kuwait,4.9,3
+2016,Kuwait,4.1,NA
+2017,Kuwait,3.9,4
+2018,Kuwait,4.1,NA
+2012,Libya,2.1,NA
+2013,Libya,1.5,8
+2014,Libya,1.8,NA
+2015,Libya,1.6,4
+2016,Libya,1.4,NA
+2017,Libya,1.7,4
+2018,Libya,1.7,NA
+2012,Nigeria,2.7,NA
+2013,Nigeria,2.5,7
+2014,Nigeria,2.7,NA
+2015,Nigeria,2.6,7
+2016,Nigeria,2.8,NA
+2017,Nigeria,2.7,7
+2018,Nigeria,2.7,NA
+2012,Saudi Arabia,4.4,NA
+2013,Saudi Arabia,4.6,1
+2014,Saudi Arabia,4.9,NA
+2015,Saudi Arabia,5.2,1
+2016,Saudi Arabia,4.6,NA
+2017,Saudi Arabia,4.9,1
+2018,Saudi Arabia,4.9,NA
+2012,United Arab Emirates,6.8,NA
+2013,United Arab Emirates,6.9,2
+2014,United Arab Emirates,7,NA
+2015,United Arab Emirates,7,2
+2016,United Arab Emirates,6.6,NA
+2017,United Arab Emirates,7.1,2
+2018,United Arab Emirates,7,NA
+2012,Venezuela,1.9,NA
+2013,Venezuela,2,6
+2014,Venezuela,1.9,NA
+2015,Venezuela,1.7,6
+2016,Venezuela,1.7,NA
+2017,Venezuela,1.8,4
+2018,Venezuela,1.8,NA
